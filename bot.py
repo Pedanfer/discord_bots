@@ -2,7 +2,7 @@ import os
 import time
 from discord import Client, Intents, Message, TextChannel
 
-TOKEN = os.environ.get('DISCORD_TOKEN')
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 # Set the cooldown time in seconds (e.g., 5 minutes = 300 seconds)
 COOLDOWN_TIME = 300
